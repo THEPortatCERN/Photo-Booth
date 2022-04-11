@@ -1,7 +1,18 @@
 import "./App.scss";
+import { useRef } from "react";
+
+import Webcam from "react-webcam";
 
 function App() {
-  return <h1>THE Port Photo Booth</h1>;
+
+  const webRef = useRef(null)
+
+
+  return (
+    <>
+      <Webcam ref={webRef} />
+    </>
+  );
 }
 
 export default App;
