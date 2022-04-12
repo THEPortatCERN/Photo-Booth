@@ -1,6 +1,7 @@
+@import 'Card';
+
 * {
   box-sizing: border-box;
-  font-family: 'Roboto Mono', monospace;
 }
 
 .app {
@@ -23,6 +24,7 @@
 }
 
 .btn {
+  margin-top: 0.2rem;
   width: 85px;
   height: 40px;
   display: flex;
@@ -33,6 +35,13 @@
   justify-content: center;
   align-items: center;
   background-color: white;
+  font-family: 'Roboto Mono', monospace;
+  transition: 0.2s ease;
 }
 
+.btn:hover {
+  margin-top: 0;
+  color: white;
+  background-color: rgb(0, 204, 255);
+}
 

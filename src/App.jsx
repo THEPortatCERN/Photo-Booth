@@ -1,7 +1,9 @@
-import "./App.scss";
+import "./styles/App.scss";
 import { useRef, useState } from "react";
 
 import Webcam from "react-webcam";
+
+import Card from "./Card";
 
 function App() {
   const [image, setImage] = useState('')
@@ -37,7 +39,7 @@ function App() {
         </>
         :
         <>
-          <img src={image} />
+          <Card image={image}/>
           <div className="controls">
           <button className="btn" onClick={onRetake}>RETAKE</button>
           <button className="btn" onClick={onSaveImg}>SAVE</button>
