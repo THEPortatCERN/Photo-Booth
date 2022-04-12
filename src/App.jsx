@@ -1,6 +1,5 @@
 import "./styles/App.scss";
 import { useRef, useState } from "react";
-
 import Webcam from "react-webcam";
 
 import Card from "./Card";
